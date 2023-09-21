@@ -1,0 +1,129 @@
+[
+  {
+    "description": "   As a user\n   I want to login into application",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-action;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3433166600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I want to login into an online account",
+            "match": {
+              "location": "step-definitions\\login-steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1513399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I fill the login form with invalid info",
+            "match": {
+              "location": "step-definitions\\login-steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 930200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should error login message",
+            "match": {
+              "location": "step-definitions\\login-steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 547873699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3234410899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I want to login into an online account",
+            "match": {
+              "location": "step-definitions\\login-steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2485799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill the login form with invalid info \"fail-1\" and \"fail-2\"",
+            "match": {
+              "location": "step-definitions\\login-steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2394899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should error login message",
+            "match": {
+              "location": "step-definitions\\login-steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566181400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-action",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login action",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "play-bdd-test",
+  "version": "1.0.0",
+  "description": "Playwright BDD automation practice framework",
+  "main": "index.js",
+  "scripts": {
+    "test": ".\\node_modules\\.bin\\cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json",
+    "report": "node reporter.js",
+    "test-report": "npm run test && npm run report"
+  },
+  "author": "Josh",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "chai": "^4.3.8",
+    "cucumber-html-reporter": "^7.1.1",
+    "playwright": "^1.38.0",
+    "prettier": "^3.0.3"
+  }
+}
